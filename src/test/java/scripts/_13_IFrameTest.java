@@ -39,7 +39,7 @@ public class _13_IFrameTest extends Base {
 
         FirstNameInput.sendKeys("John");
         LastNameInput.sendKeys("Doe");
-        submit.click();
+        submit.submit();
         Waiter.pause(2);
 
         driver.switchTo().parentFrame();

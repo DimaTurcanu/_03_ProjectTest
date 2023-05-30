@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke Suite">
+    <test verbose="2" preserve-order="true"
+          name="Critical Functionalities">
+        <classes>
+            <class name="scripts._01_GoogleTest">
+                <methods>
+                    <include name="validateSearchBar"/>
+                </methods>
+            </class>
+            <class name="scripts._03_TGLocatorsTest">
+                <methods>
+                    <include name="validateAllParagraphs"/>
+                </methods>
+            </class>
+            <class name="scripts._05_FacebookTest">
+                <methods>
+                    <include name="validateFacebookLoginForm"/>
+                </methods>
+            </class>
+            <class name="scripts._06_WikiTest">
+                <methods>
+                    <include name="validateWikiSearch1"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
