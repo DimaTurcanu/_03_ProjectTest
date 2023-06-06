@@ -127,6 +127,7 @@ public class UI_Automation_Project02 extends Base {
         Assert.assertTrue(inputEmail.isDisplayed());
         Assert.assertEquals(labelEmail.getText(), "Enter your email address and we'll send you a link to reset your password.");
         Assert.assertTrue(submitButton.isDisplayed());
+        Assert.assertTrue(submitButton.isEnabled());
         Assert.assertEquals(submitButton.getText(), "SUBMIT");
 
     }
@@ -147,10 +148,10 @@ public class UI_Automation_Project02 extends Base {
         WebElement modalCloseButton = driver.findElement(By.cssSelector("button[class='delete']"));
 
         Assert.assertTrue(modalIsActive.isDisplayed());
+        WebElement modalIsClosed = driver.findElement(By.cssSelector("div[class='modal is-active']"));
         modalCloseButton.click();
         Waiter.pause(2);
 
-        WebElement modalIsClosed = driver.findElement(By.cssSelector("div[class='modal is-active']"));
         Assert.assertFalse(modalIsClosed.isDisplayed());
     }
 
