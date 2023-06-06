@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="/Users/oksanazbytkovska/IdeaProjects/ui_automation_6/src/test/java/scripts/_03_TGLocatorsTest.java">
+        <classes>
+            <class name="scripts._03_TGLocatorsTest">
+                <methods>
+                    <include name="validateKiwiParagraph"/>
+                    <include name="validateOrangeParagraph"/>
+                    <include name="validateGrapesParagraph"/>
+                    <include name="validateAllParagraphs"/>
+                    <include name="validateRedAppleLink"/>
+                    <include name="validateAllLinks"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="/Users/oksanazbytkovska/IdeaProjects/ui_automation_6/src/test/java/scripts/_04_TGLocatorsTest.java">
+        <classes>
+            <class name="scripts._04_TGLocatorsTest">
+                <methods>
+                    <include name="validateListHeaders"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="/Users/oksanazbytkovska/IdeaProjects/ui_automation_6/src/test/java/scripts/_07_TGDynamicElementsTest.java">
+        <classes>
+            <class name="scripts._07_TGDynamicElementsTest">
+                <methods>
+                    <include name="validateBox1"/>
+                    <include name="validateBox2"/>
+                    <include name="validateListBoxes"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="/Users/oksanazbytkovska/IdeaProjects/ui_automation_6/src/test/java/scripts/_09_TGCheckBoxText.java">
+        <classes>
+            <class name="scripts._09_TGCheckBoxTest">
+                <methods>
+                    <include name="checkBoxTest1"/>
+                    <include name="checkBoxTest2"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="/Users/oksanazbytkovska/IdeaProjects/ui_automation_6/src/test/java/scripts/_08_TGWaitsTest.java">
+        <classes>
+            <class name="scripts._08_TGWaitsTest">
+                <methods>
+                    <include name="validateRedBox"/>
+                    <include name="validateBlueBox"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="/Users/oksanazbytkovska/IdeaProjects/ui_automation_6/src/test/java/scripts/_10_TGRadioButtonsTest.java">
+        <classes>
+            <class name="scripts._10_TGRadioButtonsTest">
+                <methods>
+                    <include name="radioButtonsTest"/>
+                    <include name="validatePracticeMore"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="/Users/oksanazbytkovska/IdeaProjects/ui_automation_6/src/test/java/scripts/_11_TGDropdownsTest.java">
+        <classes>
+            <class name="scripts._11_TGDropdownsTest">
+                <methods>
+                    <include name="productDropdownTest"/>
+                    <include name="productColorTest"/>
+                    <include name="productDeliveryTest"/>
+                    <include name="dropdownTestCase"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="/Users/oksanazbytkovska/IdeaProjects/ui_automation_6/src/test/java/scripts/_12_TGAlertsTest.java">
+        <classes>
+            <class name="scripts._12_TGAlertsTest">
+                <methods>
+                    <include name="warningAlert"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="/Users/oksanazbytkovska/IdeaProjects/ui_automation_6/src/test/java/scripts/_16_TGFileDownload.java">
+        <classes>
+            <class name="scripts._16_TGFileDownload">
+                <methods>
+                    <include name="validateUploadButton"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="/Users/oksanazbytkovska/IdeaProjects/ui_automation_6/src/test/java/scripts/_15_TGFileUpload.java">
+        <classes>
+            <class name="scripts._15_TGFileUpload">
+                <methods>
+                    <include name="validateUploadButton"/>
+                    <include name="fileUpload"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
