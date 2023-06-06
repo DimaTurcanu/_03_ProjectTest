@@ -246,7 +246,7 @@ public class UI_Automation_Project02 extends Base {
     Click on the “LOGIN” button
     Validate the failure message is displayed as “Invalid Username entered!” above the form
      */
-    @Test(priority = 8)
+    @Test(priority = 10)
     public void loginWrongUsernameAndPassword() {
         WebElement usernameInput = driver.findElement(By.id("username"));
         WebElement passwordInput = driver.findElement(By.id("password"));
