@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="/Users/akinkaya/IdeaProjects/ui_automation_6/src/test/java/scripts">
+<suite name="Regression Suite">
+    <test verbose="2" preserve-order="true" name="All Functionalities">
         <classes>
             <class name="scripts._01_GoogleTest">
                 <methods>
@@ -11,20 +11,8 @@
                     <include name="validateSearchButton"/>
                 </methods>
             </class>
-            <class name="scripts._01_GoogleTest">
-                <methods>
-                    <include name="validateTheContactUsInformation"/>
-                    <include name="validateTheFullNameInputBox"/>
-                    <include name="validateTheGenderRadioButton"/>
-                    <include name="validateTheAddressInputBox"/>
-                    <include name="validateTheEmailInputBox"/>
-                    <include name="validateThePhoneInputBox"/>
-                    <include name="validateTheMessageTextArea"/>
-                    <include name="validateTheConsentCheckbox"/>
-                    <include name="validateTheSubmitButton"/>
-                    <include name="validateTheFormSubmission"/>
-                </methods>
-            </class>
+            <class name="scripts._01_ProjectTest"/>
+            <class name="scripts._02_ProjectTest"/>
             <class name="scripts._02_AppleTest">
                 <methods>
                     <include name="validateTitleAndURL"/>
@@ -136,6 +124,7 @@
                     <include name="validateSortAscByQuantity"/>
                 </methods>
             </class>
+            <class name="scripts._19_TGActionsTest"/>
         </classes>
     </test>
 </suite>

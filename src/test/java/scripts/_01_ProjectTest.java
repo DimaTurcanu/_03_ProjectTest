@@ -1,6 +1,7 @@
-package projects;
+package scripts;
 
 
+import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -172,8 +173,8 @@ public class _01_ProjectTest extends Base {
     }
 
     @Test(priority = 10, description = "Test Case 10 - Validate the form submission")
-    public <Faker> void validateTheFormSubmission(){
-
+    public void validateTheFormSubmission(){
+        Faker faker = new Faker();
 
         WebElement nameInputBox = driver.findElement(By.xpath("//label[@for='name']/..//input"));
         List<WebElement> genders = driver.findElements(By.cssSelector(".mr-1"));
@@ -184,7 +185,14 @@ public class _01_ProjectTest extends Base {
         WebElement consentCheckBox = driver.findElement(By.cssSelector("input[type='checkbox']"));
         WebElement submitButton = driver.findElement(By.cssSelector(".is-link"));
 
-
+        nameInputBox.sendKeys(faker.name().fullName());
+        genders.get(0).click();
+        addressInputBox.sendKeys(faker.address().fullAddress());
+        emailInputBox.sendKeys("abcd@gmail.com");
+        phoneInputBox.sendKeys(faker.phoneNumber().cellPhone());
+        messageTextArea.sendKeys(faker.gameOfThrones().quote());
+        consentCheckBox.click();
+        submitButton.click();
 
         WebElement confirmationMessage = driver.findElement(By.cssSelector(".mt-5"));
 
