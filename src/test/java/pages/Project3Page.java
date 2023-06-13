@@ -80,19 +80,4 @@ public class Project3Page {
     @FindBy(css = ".ml-3")
     public WebElement confirmationMessage;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
